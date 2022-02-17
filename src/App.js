@@ -3,6 +3,12 @@ import axios from 'axios';
 import NasaPhoto from "./NasaPhoto";
 import Header from './Header';
 import "./App.css";
+import styled from "styled-components";
+
+
+const BodyStyle = styled.div`
+  background-color: ${props => props.theme.fourColor}
+`;
 
 
 function App() {
@@ -18,7 +24,7 @@ function App() {
     })
   }, [])
   return (
-    <div className="App">
+    <BodyStyle className="App">
             <p>
         
         Read through the instructions in the README.md file to build your NASA
@@ -27,7 +33,7 @@ function App() {
       <Header/>
       {data && <NasaPhoto photo={data}/>}
 
-    </div>
+    </BodyStyle>
   );
 }
 
