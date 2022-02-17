@@ -6,7 +6,12 @@ const PhotoStyle = styled.div`
 
 color: ${props => props.theme.secondColor};
 `;
+const ParagraphStyle = styled.p`
 
+`;
+const H2Style = styled.h2`
+  
+`;
 
 
 const NasaPhoto = (props) => {
